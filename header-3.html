@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: "DM Sans", sans-serif;
+      }
+
+      section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+      }
+
+      .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .nav-bar {
+        height: 40px;
+        width: 1170px;
+        background-color: white;
+        margin-top: 67px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .col-6 {
+        width: 50%;
+      }
+
+      .form-box {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 470px;
+        width: 100%;
+        margin-top: 77px;
+      }
+
+      h1 {
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 52px;
+        letter-spacing: -0.4px;
+        color: rgba(30, 14, 98, 1);
+        margin-top: 110px;
+        width: 600px;
+      }
+
+      .email-box {
+        border: 2px solid rgba(235, 234, 237, 1);
+        width: 470px;
+        height: 60px;
+        border-radius: 100px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 0px;
+        vertical-align: middle;
+        padding: 24px;
+        margin-bottom: 30px;
+      }
+
+      .password-box {
+        border: 2px solid rgba(235, 234, 237, 1);
+        width: 470px;
+        height: 60px;
+        border-radius: 100px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 0px;
+        vertical-align: middle;
+        padding: 24px;
+      }
+
+      button {
+        height: 60px;
+        width: 470px;
+        border-radius: 100px;
+        border: none;
+        background-color: rgba(37, 218, 197, 1);
+        font-family: DM Sans;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 0px;
+        text-align: center;
+        vertical-align: middle;
+        color: white;
+        margin-top: 30px;
+        cursor: pointer;
+      }
+
+      .para {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: rgba(21, 20, 57, 0.4);
+        margin-top: 17px;
+      }
+
+      .parent {
+        display: flex;
+        gap: 100px;
+        margin-left: 115px;
+        margin-right: 115px;
+      }
+
+      .video-box {
+        margin-top: 123px;
+      }
+
+      .video-para {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0px;
+        color: rgba(21, 20, 57, 0.4);
+        width: 470px;
+        margin-top: 32px;
+      }
+
+      iframe {
+        border: none;
+        border-radius: 10px;
+      }
+
+      .right-nav {
+        display: flex;
+        gap: 32px;
+      }
+
+      .left-side {
+        display: flex;
+        gap: 34px;
+      }
+
+      .left-nav {
+        display: flex;
+        gap: 29px;
+        align-items: center;
+      }
+
+      .startup {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: -0.29px;
+        text-align: center;
+        color: rgba(30, 14, 98, 1);
+      }
+
+      a {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0px;
+        color: rgba(21, 20, 57, 0.4);
+      }
+
+      .btn {
+        height: 40px;
+        width: 100px;
+        border-radius: 100px;
+        border: none;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0px;
+        color: white;
+        background-color: rgba(37, 218, 197, 1);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="nav-bar">
+            <ul class="right-nav">
+              <li><a class="startup" href="">Startup 3 </a></li>
+              <li>
+                <a href=""
+                  >Products
+                  <svg
+                    width="12"
+                    height="7"
+                    viewBox="0 0 12 7"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.1384 0.926409C11.1384 0.837123 11.0938 0.736676 11.0268 0.669712L10.4688 0.111676C10.4018 0.0447122 10.3013 6.9499e-05 10.2121 6.9499e-05C10.1228 6.9499e-05 10.0223 0.0447122 9.95536 0.111676L5.5692 4.49784L1.18304 0.111676C1.11607 0.0447122 1.01563 6.9499e-05 0.926339 6.9499e-05C0.825893 6.9499e-05 0.736607 0.0447122 0.669643 0.111676L0.111607 0.669712C0.0446429 0.736676 7.45058e-08 0.837123 7.45058e-08 0.926409C7.45058e-08 1.01569 0.0446429 1.11614 0.111607 1.1831L5.3125 6.384C5.37946 6.45096 5.47991 6.49561 5.5692 6.49561C5.65848 6.49561 5.75893 6.45096 5.82589 6.384L11.0268 1.1831C11.0938 1.11614 11.1384 1.01569 11.1384 0.926409Z"
+                      fill="#151439"
+                      fill-opacity="0.4"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li><a href="">Pricing</a></li>
+              <li><a href="">Community</a></li>
+            </ul>
+
+            <div class="left-nav">
+              <ul class="left-side">
+                <li><a href="">API</a></li>
+                <li><a href="">Help</a></li>
+                <li><a href="">Login</a></li>
+              </ul>
+              <input class="btn" type="button" value="Sign Up" />
+            </div>
+          </div>
+        </div>
+
+        <div class="parent">
+          <div class="col-6">
+            <div class="text-box">
+              <h1>
+                A high-quality solution for those who want a beautiful startup
+                website quickly
+              </h1>
+            </div>
+            <div class="form-box">
+              <input class="email-box" type="text" placeholder="Your email" />
+              <input
+                class="password-box"
+                type="text"
+                placeholder="Your Password"
+              />
+              <button>Sign in</button>
+              <p class="para">
+                By signing up, you agree to the Terms of Service
+              </p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="video-box">
+              <iframe
+                width="470"
+                height="265"
+                src="https://www.youtube.com/embed/QdLExXYsyQw?si=cy4YuGN0MsqTbWSp"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <p class="video-para">
+                We made it so beutiful and simple. It combines landings, pages,
+                blogs and shop screens. It is definitely the tool you need in
+                your collection!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
