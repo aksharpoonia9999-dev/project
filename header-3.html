@@ -16,22 +16,15 @@
         font-family: "DM Sans", sans-serif;
       }
 
-      section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      }
-
       .container {
         width: 100%;
-        max-width: 1440px;
+        max-width: 1210px;
         margin: 0 auto;
+        padding: 67px 20px 0 20px;
       }
 
       .row {
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: space-between;
       }
@@ -40,14 +33,9 @@
         height: 40px;
         width: 1170px;
         background-color: white;
-        margin-top: 67px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-      }
-
-      .col-6 {
-        width: 50%;
       }
 
       .form-box {
@@ -96,13 +84,13 @@
         padding: 24px;
       }
 
-      button {
+      .btn2 {
         height: 60px;
-        width: 470px;
+        max-width: 470px;
+        width: 100%;
         border-radius: 100px;
         border: none;
         background-color: rgba(37, 218, 197, 1);
-        font-family: DM Sans;
         font-weight: 500;
         font-size: 20px;
         line-height: 26px;
@@ -127,11 +115,10 @@
       .parent {
         display: flex;
         gap: 100px;
-        margin-left: 115px;
-        margin-right: 115px;
       }
 
       .video-box {
+        width: 100%;
         margin-top: 123px;
       }
 
@@ -150,42 +137,10 @@
         border-radius: 10px;
       }
 
-      .right-nav {
-        display: flex;
-        gap: 32px;
-      }
-
-      .left-side {
-        display: flex;
-        gap: 34px;
-      }
-
-      .left-nav {
-        display: flex;
-        gap: 29px;
-        align-items: center;
-      }
-
-      .startup {
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 100%;
-        letter-spacing: -0.29px;
-        text-align: center;
-        color: rgba(30, 14, 98, 1);
-      }
-
-      a {
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 26px;
-        letter-spacing: 0px;
-        color: rgba(21, 20, 57, 0.4);
-      }
-
       .btn {
         height: 40px;
-        width: 100px;
+        max-width: 100px;
+        width: 100%;
         border-radius: 100px;
         border: none;
         font-weight: 500;
@@ -195,7 +150,269 @@
         color: white;
         background-color: rgba(37, 218, 197, 1);
         cursor: pointer;
+        font-family: "DM Sans", sans-serif;
+        padding: 7px 18px;
       }
+      .logo {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: -0.29px;
+        text-align: center;
+        color: rgba(30, 14, 98, 1);
+      }
+      .left-nav {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+      }
+      .left-item {
+        display: flex;
+        gap: 29px;
+        align-items: center;
+      }
+      .left-text {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0px;
+        color: rgba(21, 20, 57, 0.4);
+        cursor: pointer;
+      }
+      .right-text {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0px;
+        color: rgba(21, 20, 57, 0.4);
+      }
+      .left-item-sm {
+        display: none;
+      }
+      .right-item {
+        display: flex;
+        gap: 34px;
+        align-items: center;
+      }
+      .nav-menu {
+        display: flex;
+      }
+      .menu-button {
+        display: none;
+        flex-direction: column;
+        background-color: transparent;
+        width: 20px;
+        height: 20px;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+      }
+      .menu-line {
+        width: 100%;
+        height: 2px;
+        background-color: black;
+      }
+
+      @media (max-width: 1024px) {
+        .menu-button {
+          display: flex;
+          position: relative;
+          z-index: 1;
+        }
+        .left-item {
+          display: none;
+        }
+
+        .left-item-sm {
+          display: flex;
+          gap: 20px;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+
+        .right-item {
+          flex-direction: column;
+          gap: 20px;
+        }
+        .nav-menu {
+          position: fixed;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 60%;
+          height: 100%;
+          top: 0;
+          right: -100%;
+          background-color: rgb(255, 255, 255);
+        }
+        #menu-connect:checked ~ .nav-menu {
+          right: 0;
+        }
+        .parent {
+          flex-direction: column;
+          gap: 0;
+        }
+        .nav-bar {
+          max-width: 980px;
+          width: 100%;
+        }
+        h1 {
+          margin-top: 60px;
+          font-size: 42px;
+        }
+        .video-box {
+          margin-top: 60px;
+        }
+        .video-para{
+          margin-top: 16px;
+        }
+      }
+      @media (max-width : 768px) {
+        h1 {
+          margin-top: 30px;
+        }
+        .form-box {
+          margin-top: 40px;
+        }
+        .video-box {
+          margin-top: 30px;
+        }
+        .container {
+          padding-top: 40px;
+        }
+        .video-para {
+          margin-top: 10px;
+        }
+        .email-box {
+          margin-bottom: 20px;
+        }
+        .btn2 {
+          margin-top: 20px;
+        }
+      }
+      @media (max-width : 425px) {
+        h1 {
+          font-size: 32px;
+          max-width: 400px;
+          margin-top: 20px;
+          line-height: 40px;
+        }
+        .form-box {
+          margin-top: 30px;
+        }
+        .nav-bar {
+          max-width: 470px;
+          width: 100%;
+        }
+        .email-box {
+          max-width: 300px;
+          height: 50px;
+          margin-bottom: 20px;
+        }
+        .password-box {
+          max-width: 300px;
+          height: 50px;
+        }
+        .btn2 {
+          max-width: 300px;
+          height: 50px;
+          margin-top: 20px;
+        }
+        .para {
+          font-size: 14px;
+          max-width: 335px;
+          margin-top: 10px;
+        }
+        iframe {
+          width: 385px;
+          height: 300px;
+        }
+        .video-box {
+          margin-top: 20px;
+        }
+        .video-para {
+          font-size: 14px;
+          max-width: 385px;
+          margin-top: 10px;
+          line-height: normal;
+        }
+        .container {
+          padding-top: 30px;
+        }
+        h1 {
+          font-size: 28px;
+        }
+      }
+      @media (max-width : 375px) {
+        .menu-button {
+          width: 16px;
+          height: 16px;
+        }
+        iframe {
+          width: 355px;
+          height: 285px;
+        }
+        .video-para {
+          max-width: 365px;
+          margin-top: 10px;
+        }
+        h1 {
+          font-size: 24px;
+          max-width: 365px;
+          margin-top: 20px;
+        }
+        .container {
+          padding: 30px 10px 0 10px;
+        }
+        .email-box {
+          width: 250px;
+          margin-bottom: 20px;
+        }
+        .password-box {
+          width: 250px;
+        }
+        .btn2 {
+          width: 250px;
+          margin-top: 20px;
+        }
+      }
+      @media (max-width : 320px) {
+        .menu-button {
+          width: 14px;
+          height: 14px;
+        }
+        .nav-bar {
+          max-width: 320px;
+        }
+        h1 {
+          font-size: 22px;
+          max-width: 300px;
+        }
+        .email-box {
+          width: 200px;
+          height: 50px;
+        }
+        .password-box {
+          width: 200px;
+          height: 50px;
+        }
+        .btn2 {
+          width: 200px;
+          height: 50px;
+        }
+        .para {
+          width: 200px;
+        }
+        iframe {
+          width: 280px;
+          height: 200px;
+        }
+        .video-para {
+          max-width: 280px;
+        }
+      }
+
     </style>
   </head>
 
@@ -204,11 +421,11 @@
       <div class="container">
         <div class="row">
           <div class="nav-bar">
-            <ul class="right-nav">
-              <li><a class="startup" href="">Startup 3 </a></li>
-              <li>
-                <a href=""
-                  >Products
+            <div class="left-nav">
+              <div class="logo"><a href="">Startup 3</a></div>
+              <div class="left-item">
+                <a class="left-text">
+                  Products
                   <svg
                     width="12"
                     height="7"
@@ -217,30 +434,43 @@
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
+                      class="path"
                       d="M11.1384 0.926409C11.1384 0.837123 11.0938 0.736676 11.0268 0.669712L10.4688 0.111676C10.4018 0.0447122 10.3013 6.9499e-05 10.2121 6.9499e-05C10.1228 6.9499e-05 10.0223 0.0447122 9.95536 0.111676L5.5692 4.49784L1.18304 0.111676C1.11607 0.0447122 1.01563 6.9499e-05 0.926339 6.9499e-05C0.825893 6.9499e-05 0.736607 0.0447122 0.669643 0.111676L0.111607 0.669712C0.0446429 0.736676 7.45058e-08 0.837123 7.45058e-08 0.926409C7.45058e-08 1.01569 0.0446429 1.11614 0.111607 1.1831L5.3125 6.384C5.37946 6.45096 5.47991 6.49561 5.5692 6.49561C5.65848 6.49561 5.75893 6.45096 5.82589 6.384L11.0268 1.1831C11.0938 1.11614 11.1384 1.01569 11.1384 0.926409Z"
                       fill="#151439"
                       fill-opacity="0.4"
                     />
                   </svg>
                 </a>
-              </li>
-              <li><a href="">Pricing</a></li>
-              <li><a href="">Community</a></li>
-            </ul>
+                <a class="left-text" href="">Pricing</a>
+                <a class="left-text" href="">Community</a>
+              </div>
+            </div>
 
-            <div class="left-nav">
-              <ul class="left-side">
-                <li><a href="">API</a></li>
-                <li><a href="">Help</a></li>
-                <li><a href="">Login</a></li>
-              </ul>
-              <input class="btn" type="button" value="Sign Up" />
+            <input hidden type="checkbox" id="menu-connect" />
+            <label for="menu-connect" class="menu-button">
+              <span class="menu-line"></span>
+              <span class="menu-line"></span>
+              <span class="menu-line"></span>
+            </label>
+
+            <div class="nav-menu">
+              <div class="right-item">
+                <a class="right-text" href="">API</a>
+                <a class="right-text" href="">Help</a>
+                <a class="right-text" href="">Login</a>
+                <div class="left-item-sm">
+                  <a class="left-text" href="">Products</a>
+                  <a class="left-text" href="">Pricing</a>
+                  <a class="left-text" href="">Community</a>
+                </div>
+                <button class="btn">Sign up</button>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="parent">
-          <div class="col-6">
+          <div class="left-content">
             <div class="text-box">
               <h1>
                 A high-quality solution for those who want a beautiful startup
@@ -248,19 +478,27 @@
               </h1>
             </div>
             <div class="form-box">
-              <input class="email-box" type="text" placeholder="Your email" />
-              <input
-                class="password-box"
-                type="text"
-                placeholder="Your Password"
-              />
-              <button>Sign in</button>
-              <p class="para">
-                By signing up, you agree to the Terms of Service
-              </p>
+              <form action="">
+                <input
+                  required
+                  class="email-box"
+                  type="text"
+                  placeholder="Your email"
+                />
+                <input
+                  class="password-box"
+                  type="password"
+                  placeholder="Your Password"
+                  required
+                />
+                <input class="btn2" type="submit" value="Sign in" />
+                <p class="para">
+                  By signing up, you agree to the Terms of Service
+                </p>
+              </form>
             </div>
           </div>
-          <div class="col-6">
+          <div class="right-content">
             <div class="video-box">
               <iframe
                 width="470"
